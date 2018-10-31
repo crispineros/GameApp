@@ -1,0 +1,75 @@
+html,body{
+  margin: 0px;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+
+.be-light-blue{
+  background-color:#2A61C7 ;
+}
+
+.be-lightest-blue{
+  background-color:#6EB1F0;
+}
+
+.be-dark-blue{
+  background-image: url("./fondo.jpg") ;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex:none;
+}
+
+.white{
+  color: #ECF0F1;
+}
+
+.low-margin{
+  margin: 1px;
+}
+
+.large-padding{
+  padding: 8px 5px;
+}
+
+.big{
+  height: 700px;
+}
+
+.margin-top{
+  padding: 10px;
+  border-radius: 30px;
+  border: solid;
+  border-color: white;
+}
+
+
+.be-flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #2A61C7;
+  margin: 1px;
+}
+
+.gamepad {
+  content: url("/assets/gamepad.svg");
+  width: auto;
+  height: 50px;
+}
+
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px 12px;
+  font: inherit;
+}
+.btn.be-lightest-blue.white{
+  background-color:#6EB1F0;
+  color: #ECF0F1;
+}

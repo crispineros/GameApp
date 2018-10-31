@@ -1,0 +1,6 @@
+<h1>Muy Pronto!</h1>
+<% if user_signed_in? %>
+  <li class="col-md">
+    <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+  </li>
+<%end%>
