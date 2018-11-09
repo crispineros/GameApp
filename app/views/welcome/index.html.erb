@@ -1,6 +1,62 @@
-<h1>Muy Pronto!</h1>
-<% if user_signed_in? %>
-  <li class="col-md">
-    <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
-  </li>
-<%end%>
+<div class="container">
+  <aside class="side-menu be-light-blue border-white">
+    <div class="center padding-top">
+      <div class="profile be-lightest-blue user-image">
+      </div>
+    </div>
+    <div class="center padding-top">
+      <div class="username be-lightest-blue white">username
+      </div>
+    </div>
+    <div class="center padding-top">
+      <div class="white big-font">Ranking: Lvl 1
+      </div>
+    </div>
+    <div class="center padding-top">
+      <div class="character-image">
+      </div>
+    </div>
+    <div class="center padding-top">
+      <div class="w3-container border-white "style="border-radius: 10px" >
+        <div class="w3-border go-left" >
+          <div class="w3-white" style="height:10px;width:120px; border-radius: 10px "></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="content be-darkest-blue">
+    <header class="be-flex border-white">
+      <nav class="be-light-blue white nav-bar">
+        <ul class="no-list row center-xs middle-xs">
+          <li class="col-md">
+            <%= link_to "Noticias", root_path,class:'white' %>
+          </li>
+          <li class="col-md">
+            Foros
+          </li>
+          <li class="col-md">
+            Grupos
+          </li>
+          <li class="col-md">
+            Eventos
+          </li>
+          <% if user_signed_in? %>
+            <li class="col-md">
+              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete ,class:'white'%>
+            </li>
+          <%else%>
+            <li class="col-md">
+              <%= link_to "Iniciar sesión", new_user_session_path,class:'white' %>
+            </li>
+            <li class="col-md">
+              <%= link_to "Crear cuenta", new_user_registration_path,class:'white' %>
+            </li>
+          <%end%>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1 class="white center-xs middle-xs">proximamente!!</h1>
+    </main>
+  </div>
+</div>
