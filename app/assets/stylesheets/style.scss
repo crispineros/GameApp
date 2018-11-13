@@ -142,7 +142,7 @@ html,body{
 }
 
 .padding-top{
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .username{
@@ -183,5 +183,20 @@ html,body{
 .go-left{
   position: relative;
   border-radius: 10px;
-  left: -17px;
+  left: -16px;
+}
+
+.aside-bar{
+  height: 50px;
+  width: available;
+}
+
+.padding-to-fit{
+  padding-top: 22px;
+}
+
+.audio-padding{
+  position: relative;
+  padding-top: 10px;
+  left: 10px;
 }
